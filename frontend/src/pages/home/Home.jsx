@@ -3,6 +3,7 @@ import Hero from "./hero/Hero";
 import Contact from "../contact/ContactForm";
 import Service from "./service/Service";
 import FeedbackReview from "../feedback/FeedbackReview";
+// import Faq from "../faq/FaqSection";
 const Home = () => {
   return (
     <div className=" w-full min-h-screen pb-16">
@@ -14,6 +15,7 @@ const Home = () => {
 
     <Contact />
     <FeedbackReview />
+    {/* <Faq /> */}
     </div>
   );
 }; 

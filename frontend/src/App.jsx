@@ -12,6 +12,7 @@ import Terms from './pages/Terms/TermsOfService';
 import FeedbackReview from './pages/feedback/FeedbackReview';
 import FerrySelection from './pages/ticket/FerrySelection';
 import PassengerDetails from './pages/ticket/PassengerDetails'
+import Faq from './pages/faq/Faq';
 function App() {
   return (
     <Router>
@@ -42,6 +43,7 @@ function MainLayout() {
         <Route path="/review" element={<FeedbackReview />} />
         <Route path="/ferry-selection/:id" element={<FerrySelection />} />
         <Route path="/passenger-details" element={<PassengerDetails />} />
+        <Route path="/faq" element={<Faq />} />
       </Routes>
 
       {/* Conditionally render Footer */}
