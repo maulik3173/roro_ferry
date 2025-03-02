@@ -13,6 +13,8 @@ import FeedbackReview from './pages/feedback/FeedbackReview';
 import FerrySelection from './pages/ticket/FerrySelection';
 import PassengerDetails from './pages/ticket/PassengerDetails'
 import Faq from './pages/faq/Faq';
+import ForgotPassword from './pages/forgetpassword/ForgetPassword';
+import OtpPage from './pages/forgetpassword/OtpPage';
 function App() {
   return (
     <Router>
@@ -23,7 +25,7 @@ function App() {
 
 function MainLayout() {
   const location = useLocation();
-  const hideLayout = location.pathname === "/login" || location.pathname === "/register"; // Hide for login & register pages
+  const hideLayout = location.pathname === "/login" || location.pathname === "/register" || location.pathname === "/forgot-password" || location.pathname === "/otp"; // Hide for login & register pages
 
   return (
     <main className="w-full flex flex-col bg-neutral-50 min-h-screen">
@@ -39,6 +41,8 @@ function MainLayout() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/otp" element={<OtpPage />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/review" element={<FeedbackReview />} />
         <Route path="/ferry-selection/:id" element={<FerrySelection />} />
