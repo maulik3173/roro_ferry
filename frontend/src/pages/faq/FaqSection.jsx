@@ -5,12 +5,12 @@ const About = () => {
   return (
     <div className="w-full">
       {/* Top layout with a background image instead of a video */}
-      <div className="w-full space-y-12 pb-16">
-        <TopLayout
+      {/* <div className="w-full space-y-12 pb-16"> */}
+        {/* <TopLayout
           bgimg="https://videos.pexels.com/video-files/3994031/3994031-uhd_2560_1440_30fps.mp4"
           title="Frequency Asked Questions"
         />
-      </div>
+      </div> */}
 
       {/* Faq Section */}
         <Faq />

@@ -87,7 +87,7 @@ const Hero = () => {
             {/* Chatbox */}
             {isChatOpen && (
                 <motion.div 
-                    className='fixed bottom-16 right-6 w-80 h-[500px] bg-white shadow-lg rounded-lg flex flex-col'
+                    className='fixed bottom-16 right-6 w-80 h-[500px] z-50 bg-white shadow-lg rounded-lg flex flex-col'
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.8 }}

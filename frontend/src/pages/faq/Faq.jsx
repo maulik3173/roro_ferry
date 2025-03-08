@@ -43,7 +43,7 @@ const faqs = [
   }
 ];
 
-const FAQSection = () => {
+const Faq = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -88,4 +88,4 @@ const FAQSection = () => {
   );
 };
 
-export default FAQSection;
+export default Faq;

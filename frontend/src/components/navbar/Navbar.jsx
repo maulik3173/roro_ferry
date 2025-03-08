@@ -18,7 +18,6 @@ const Navbar = () => {
   ];
 
   const moreItems = [
-    { label: "Register", link: "/register" },
     { label: "Terms & Conditions", link: "/terms" },
     { label: "FAQ", link: "/faq" },
   ];

@@ -9,7 +9,7 @@ import Contact from './pages/contact/Contact';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
 import Terms from './pages/Terms/TermsOfService';
-import FeedbackReview from './pages/feedback/FeedbackReview';
+import Review from './pages/review/ReviewPage';
 import FerrySelection from './pages/ticket/FerrySelection';
 import PassengerDetails from './pages/ticket/PassengerDetails'
 import Faq from './pages/faq/Faq';
@@ -44,7 +44,7 @@ function MainLayout() {
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/otp" element={<OtpPage />} />
         <Route path="/terms" element={<Terms />} />
-        <Route path="/review" element={<FeedbackReview />} />
+        <Route path="/review" element={<Review />} />
         <Route path="/ferry-selection/:id" element={<FerrySelection />} />
         <Route path="/passenger-details" element={<PassengerDetails />} />
         <Route path="/faq" element={<Faq />} />

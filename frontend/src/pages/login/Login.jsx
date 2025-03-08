@@ -150,7 +150,7 @@ const Login = () => {
 const fakeLogin = (email, password) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      if (email === "test@example.com" && password === "123456") {
+      if (email === "maulik@gmail.com" && password === "123456") {
         resolve({ success: true });
       } else {
         resolve({ success: false });
